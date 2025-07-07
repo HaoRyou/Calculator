@@ -8,32 +8,36 @@
 </head>
 <body>
     <div id = "Container">
-        <p id = "Output"></p>
-        <div id = "number">
-            <div>
-                <button class = "num">7</button>
-                <button class = "num">8</button>
-                <button class = "num">9</button>
-                <button class = "funct">/</button>
+        <div class = "screen", id = "screens">
+            <input id = "Output" readonly>
+        </div>
+        <div class = "column" , id = "number">
+            <div class = "Row">
+                <button onclick="input('7')" class = "num" id = "seven">7</button>
+                <button onclick="input('8')" class = "num" id = "eight">8</button>
+                <button onclick="input('9')" class = "num" id = "nine">9</button>
+                <button onclick="input('/')" class = "funct" id = "divide">/</button>
             </div>
-            <div>
-                <button class = "num">4</button>
-                <button class = "num">5</button>
-                <button class = "num">6</button>
-                <button class = "funct">X</button>
+            <div class="Row">
+                <button onclick="input('4')" class = "num" id = "four">4</button>
+                <button onclick="input('5')" class = "num" id = "five">5</button>
+                <button onclick="input('6')" class = "num" id = "six">6</button>
+                <button onclick="input('*')" class = "funct" id = "time">X</button>
             </div>
-            <div>
-                <button class = "num">1</button>
-                <button class = "num">2</button>
-                <button class = "num">3</button>
-                <button class = "funct">-</button>
+            <div class="Row">
+                <button onclick="input('1')" class = "num" id = "one">1</button>
+                <button onclick="input('2')" class = "num" id="two">2</button>
+                <button onclick="input('3')" class = "num" id="three">3</button>
+                <button onclick="input('-')" class = "funct" id="minus">-</button>
             </div>
-            <div>
-                <button class = "num">0</button>
-                <button class = "funct">.</button>
-                <button class = "funct">+</button>
-                <button class = "funct">=</button>
+            <div class="Row">
+                <button onclick="input('0')" class = "num" id="zero">0</button>
+                <button onclick="input('.')" class = "num" id="dot">.</button>
+                <button onclick="input('+')" class = "funct" id="plus">+</button>
+                <button onclick="Finish()" class = "funct" id="equals">=</button>
+                <button onclick="clear_screen()" class = "funct" id="clear">Clear</button>
             </div>
+
         </div>
     </div>
 </body>

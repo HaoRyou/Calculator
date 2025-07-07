@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex: 1;
+
+}
+
+.screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: lightgrey;
+    border:1px solid black;
+    width: 100%;
+    padding: 20px;
+}
+
+.column{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    gap: 10px;
+}
+
+#Output{
+    width: 75%;
+    padding: 20px;
+    font-size: large;
+}
+
+.row{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    gap: 10px;
+}
+button:hover {
+    background-color: lightblue;
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    background-color: lightslategray;
+    color: white;
+    font-size: large;
+}
+
+.funct{
+    background-color: orange;
+}
